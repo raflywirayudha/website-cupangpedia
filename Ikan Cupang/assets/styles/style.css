@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Poppins", Inter, sans-serif;
+  justify-content: center;
+  background-color: #000000;
+  color: #e9eaec;
+}
+
+main {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 1.4rem 7%;
+  background-color: #000000f0;
+  border-bottom: 1px solid #21201c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar-logo a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ad9fa8;
+}
+
+.navbar-logo a h1 {
+  font-size: 1.2rem;
+}
+
+.navbar-logo a h1 span {
+  color: #e9eaec;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar-nav li a {
+  color: #e9eaec;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+  color: #ad9fa8;
+}
+
+.content {
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 15vh;
+  padding-bottom: 3rem;
+}
+
+article h1,
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+h3 {
+  text-align: center;
+}
+
+article p {
+  margin: 10px;
+  font-size: 0.8rem;
+  font-family: Poppins;
+  font-weight: lighter;
+}
+
+aside {
+  display: flex;
+  padding-top: 3.5rem;
+  justify-content: center;
+  height: 29rem;
+  padding-right: 0;
+}
+
+.aside figure img {
+  height: 10rem;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.aside {
+  background-color: #080808;
+  width: 15rem;
+  padding: 5px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+
+.aside figcaption {
+  font-size: medium;
+  text-align: center;
+}
+
+.aside section {
+  text-align: center;
+}
+
+.aside table {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.aside th,
+td {
+  padding: 3px;
+  font-family: Inter;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #21201c;
+  border-radius: 7px;
+  background-color: #080808;
+  text-align: center;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+
+.card span h3 {
+  font-size: 0.8rem;
+}
+
+.card img {
+  height: 85%;
+}
+
+.jenis section {
+  margin-bottom: 50px;
+}
+
+.jenis section img {
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+}
+
+.habitat img {
+  border-radius: 10px;
+}
+
+.reproduksi img {
+  border-radius: 10px;
+}
+
+.ikancupang {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ikancupang img {
+  max-width: 18rem;
+}
+
+.homepage h1 {
+  margin: 0;
+  color: #e9eaec;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.homepage h1 span {
+  color: #ad9fa8;
+}
+
+.homepage p {
+  font-family: Poppins;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.habitat-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.habitat-container img {
+  border-radius: 10px;
+  width: 50px;
+  flex: 1;
+  margin: 10px;
+  box-shadow: 5px 5px 20px black;
+}
+
+.habitat-container p {
+  flex: 1;
+  margin: 10px;
+}
+
+.reproduksi-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reproduksi-container img {
+  border-radius: 10px;
+  width: 50px;
+  flex: 1;
+  margin: 10px;
+  order: 2;
+  box-shadow: 5px 5px 20px black;
+}
+
+.reproduksi-container p {
+  flex: 1;
+  margin: 10px;
+  order: 1;
+}
+
+.morfologi li {
+  background-color: #080808;
+  font-family: Poppins;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  border: 2px solid #21201c;
+  border-radius: 15px;
+  height: 70px;
+  padding: 10px;
+  padding-bottom: 0px;
+  list-style: none;
+}
+
+footer {
+  background-color: #000000;
+  font-size: 0.8rem;
+  padding: 2px;
+  color: white;
+  text-align: center;
+}
+
+footer span {
+  color: red;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-nav {
+    width: 50%;
+  }
+
+  main {
+    flex-flow: column nowrap;
+  }
+
+  .ikancupang img {
+    max-width: 20rem;
+  }
+
+  aside {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5rem;
+  }
+
+  .navbar-nav li a {
+    font-size: 15px;
+  }
+
+  .navbar-logo a {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ikancupang {
+    flex-direction: column;
+  }
+
+  .habitat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .habitat-container img {
+    width: 100%;
+  }
+
+  .habitat-container p {
+    text-align: justify;
+  }
+
+  .reproduksi-container {
+    flex-direction: column;
+  }
+
+  .reproduksi-container img {
+    width: 100%;
+    order: 1;
+  }
+
+  .reproduksi-container p {
+    order: 2;
+    text-align: justify;
+  }
+
+  /* article h2 {
+    color: #ad9fa8;
+    font-size: 1.5rem;
+  } */
+
+  article p {
+    margin: 10px;
+    font-size: 0.9rem;
+    font-family: Poppins;
+  }
+
+  .pakan {
+    text-align: justify;
+  }
+
+  .morfologi li {
+    font-size: 0.9rem;
+    height: 8rem;
+    text-align: center;
+    overflow: auto;
+  }
+
+  article {
+    padding-top: 9.5rem;
+  }
+
+  .homepage h1 {
+    font-size: 2rem;
+  }
+
+  .homepage p {
+    padding-top: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  aside {
+    padding-top: 2rem;
+  }
+
+  aside figure img {
+    height: 20rem;
+  }
+
+  .aside {
+    width: 55%;
+    height: 100%;
+    padding: 5px;
+  }
+
+  .aside h2,
+  h3 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .aside section {
+    text-align: center;
+  }
+
+  .aside table {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+  }
+
+  .aside th,
+  td {
+    padding: 0.3rem 1.5rem;
+    font-family: Inter;
+  }
+
+  .card {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .card span > p {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aside {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+
+  .navbar-nav li a {
+    font-size: 12px;
+  }
+
+  .navbar-logo a {
+    font-size: 0.8rem;
+  }
+
+  .ikancupang img {
+    max-width: 10rem;
+  }
+
+  article {
+    padding: 4rem 0.5rem;
+  }
+
+  .morfologi li {
+    font-size: 0.8rem;
+    height: 11rem;
+  }
+}
